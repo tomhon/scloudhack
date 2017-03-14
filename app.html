@@ -1,0 +1,30 @@
+<html>
+
+<header>
+    Hello SoundCloud
+</header>
+
+<body>
+
+<script src="https://connect.soundcloud.com/sdk/sdk-3.1.2.js"></script>
+<script>
+console.log('about to call SC.initialize');
+SC.initialize({
+  client_id: 'aIgVsZTWV7KoLxgT1rMyzF2v096hUMTJ',
+  redirect_uri: 'http://example.com/callback'
+});
+console.log('about to call SC.connect');
+// initiate auth popup
+SC.connect().then(function() {
+  return SC.get('/me');
+}).then(function(me) {
+  alert('Hello, ' + me.username);
+}, function() {
+    console.log ('failed');
+});
+</script>
+
+
+</body>
+
+</html>

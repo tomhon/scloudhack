@@ -1,0 +1,23 @@
+{
+  "name": "scloudhack",
+  "version": "1.0.0",
+  "description": "SoundCloud HAck",
+  "main": "app.js",
+  "dependencies": {
+    "soundcloud": "^3.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomhon/scloudhack.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomhon/scloudhack/issues"
+  },
+  "homepage": "https://github.com/tomhon/scloudhack#readme"
+}
